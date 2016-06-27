@@ -1,20 +1,23 @@
-div#title {
+div#header {
     background-color: #4A2D74;
     text-align:center;
+}
+div#title {
+    margin-top: 60px; 
+}
+div#subtitle {
+    margin-top: 20px; 
+    margin-bottom: 60px;
 }
 span#title {
     font-family: 'Coming Soon';
     color: #8D88AD;
     font-size: 60px;
     font-weight: bold;
-    margin-top: 60px; 
-    margin-bottom: 10px;
 }
 span#subtitle {
     font-family: Arial, 'Arial Black', Tahoma, 'Trebuchet MS', Verdana;
     font-style: italic;
     color: #684D90;
     font-size: 20px;
-    margin-top: 10px; 
-    margin-bottom: 60px;
 }
