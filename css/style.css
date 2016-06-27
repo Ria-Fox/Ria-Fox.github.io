@@ -1,25 +1,28 @@
 div#header {
     background-color: #4A2D74;
-    background-image: url('../image/header.jpg') repeat;
-    opacity: 0.2;
     text-align:center;
 }
-div#title {
+div#title1 {
     margin-top: 60px; 
 }
-div#subtitle {
+div#subtitle1 {
     margin-top: 20px; 
     margin-bottom: 60px;
 }
-span#title {
+
+span#title2 {
     font-family: 'Coming Soon';
     color: #8D88AD;
     font-size: 60px;
     font-weight: bold;
 }
-span#subtitle {
+span#subtitle2 {
     font-family: Arial, 'Arial Black', Tahoma, 'Trebuchet MS', Verdana;
     font-style: italic;
     color: #684D90;
     font-size: 20px;
+}
+h2#acc {
+    color: #8D88AD;
+    font-weight: bold;
 }
