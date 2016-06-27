@@ -1,5 +1,7 @@
 div#header {
     background-color: #4A2D74;
+    background-image: url('../image/header.jpg') repeat;
+    opacity: 0.2;
     text-align:center;
 }
 div#title {
