@@ -1,6 +1,4 @@
 div#title {
-    margin-top: 20px; 
-    margin-bottom: 20px;
     background-color: #4A2D74;
     text-align:center;
 }
@@ -15,4 +13,8 @@ span#subtitle {
     font-style: italic;
     color: #684D90;
     font-size: 20px;
+}
+.row {
+    margin-top: 20px; 
+    margin-bottom: 20px;
 }
