@@ -7,17 +7,14 @@ span#title {
     color: #8D88AD;
     font-size: 60px;
     font-weight: bold;
+    margin-top: 60px; 
+    margin-bottom: 10px;
 }
 span#subtitle {
     font-family: Arial, 'Arial Black', Tahoma, 'Trebuchet MS', Verdana;
     font-style: italic;
     color: #684D90;
     font-size: 20px;
-}
-row#title {
-    margin-top: 20px; 
-    margin-bottom: 20px;
-}
-row#margin {
-    margin-top: 40px;
+    margin-top: 10px; 
+    margin-bottom: 60px;
 }
