@@ -1,6 +1,6 @@
 div#title {
-    margin: 0 auto;
-    padding: 0 20px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
     background-color: #4A2D74;
     text-align:center;
 }
