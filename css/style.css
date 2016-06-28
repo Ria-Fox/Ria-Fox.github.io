@@ -22,7 +22,6 @@ div#body1_item {
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     box-sizing: border-box;
-    font-size: 20px;
     margin-bottom: 40px;
 }
 span#title2 {
