@@ -22,7 +22,8 @@ div#body1_item {
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    font-size: 20px;
+    padding-left: -20px;
 }
 span#title2 {
     font-family: 'Indie Flower', cursive;
