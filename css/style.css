@@ -3,11 +3,11 @@ div#header {
     text-align:center;
 }
 div#title1 {
-    margin-top: 60px; 
+    padding-top: 60px; 
 }
 div#subtitle1 {
-    margin-top: 20px; 
-    margin-bottom: 60px;
+    padding-top: 20px; 
+    padding-bottom: 60px;
 }
 div#body1 {
     box-sizing: border-box;
