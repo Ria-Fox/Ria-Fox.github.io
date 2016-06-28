@@ -19,6 +19,9 @@ div#body1_item {
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     justify-content:center;
+    box-sizing: border-box;
+    font-size: 25px;
+    margin-bottom: 40px;
 }
 span#title2 {
     font-family: 'Indie Flower', cursive;
@@ -37,6 +40,9 @@ span#tag {
      top: -2px;
      font-size: 0.6em;
      padding: 2px 4px 1px;
+}
+span#indent {
+    margin-left: 40px;
 }
 h2#acc {
     color: #8D88AD;
