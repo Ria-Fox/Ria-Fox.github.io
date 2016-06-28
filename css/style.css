@@ -9,14 +9,15 @@ div#subtitle1 {
     margin-top: 20px; 
     margin-bottom: 60px;
 }
-div#body1_container {
+/*div#body1_container {
+    
+}*/
+div#body1_item {
+    width: 500px;
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-}
-div#body1_item {
-    width: 500px;
 }
 span#title2 {
     font-family: 'Indie Flower', cursive;
