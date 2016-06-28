@@ -18,6 +18,7 @@ div#body1_item {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
+    justify-content:center;
 }
 span#title2 {
     font-family: 'Indie Flower', cursive;
