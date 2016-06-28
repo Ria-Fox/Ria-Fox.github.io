@@ -1,6 +1,7 @@
 div#header {
     background-color: #4A2D74;
     text-align:center;
+    border: 0px;
 }
 div#title1 {
     padding-top: 60px; 
@@ -16,7 +17,7 @@ div#body1 {
     padding: 0 20px;
 }
 div#body1_item {
-    width: 500px;
+    width: 460px;
     box-sizing: border-box;
     display: flex;
     display: -webkit-flex;
