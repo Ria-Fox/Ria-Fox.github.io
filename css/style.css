@@ -9,7 +9,15 @@ div#subtitle1 {
     margin-top: 20px; 
     margin-bottom: 60px;
 }
-
+div#body1_container {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+div#body1_item {
+    width: 500px;
+}
 span#title2 {
     font-family: 'Indie Flower', cursive;
     color: #8D88AD;
@@ -22,7 +30,14 @@ span#subtitle2 {
     color: #684D90;
     font-size: 20px;
 }
+span#tag {
+     background-color: #e0e0e0;
+     top: -2px;
+     font-size: 0.6em;
+     padding: 2px 4px 1px;
+}
 h2#acc {
     color: #8D88AD;
     font-weight: bold;
+    font-family: 'Indie Flower', cursive;
 }
