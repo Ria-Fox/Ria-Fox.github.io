@@ -15,14 +15,15 @@ div#body1 {
     width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
-}
-div#body1_item {
-    width: 460px;
     box-sizing: border-box;
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
+    flex-direction: row;
+}
+div#body1_item {
+    width: 460px;
     box-sizing: border-box;
     font-size: 15px;
 }
