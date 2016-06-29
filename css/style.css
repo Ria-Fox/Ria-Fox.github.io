@@ -29,16 +29,19 @@ div.body1_container div.body1_item {
     box-sizing: border-box;
     font-size: 15px;
 }
+div#body2 {
+    background-color: #8D88AD;
+}
 span#title2 {
     font-family: 'Indie Flower', cursive;
-    color: #8D88AD;
+    color: #ffffff;
     font-size: 60px;
     font-weight: bold;
 }
 span#subtitle2 {
     font-family: Arial, 'Arial Black', Tahoma, 'Trebuchet MS', Verdana;
     font-style: italic;
-    color: #684D90;
+    color: #8D88AD;
     font-size: 20px;
 }
 span#tag {
@@ -52,6 +55,11 @@ span#indent {
 }
 h2#acc {
     color: #8D88AD;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+}
+h2#accw {
+    color: #FFFFFF;
     font-weight: bold;
     font-family: 'Indie Flower', cursive;
 }
