@@ -16,7 +16,7 @@ div.body1 {
     padding: 0 20px;
     width: 1000px;
 }
-div.body1 div.body1_contaianer {
+div.body1 div.body1_container {
     box-sizing: border-box;
     display: -webkit-flex;
     display: flex;
