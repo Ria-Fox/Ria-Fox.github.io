@@ -2,6 +2,7 @@ div#header {
     background-color: #4A2D74;
     text-align:center;
     border: 0px;
+    box-shadow: 2px 2px 0 silver;
 }
 div#title1 {
     padding-top: 60px; 
@@ -9,6 +10,9 @@ div#title1 {
 div#subtitle1 {
     padding-top: 20px; 
     padding-bottom: 60px;
+}
+div#body1shadow {
+    box-shadow: 2px 2px 0 silver;
 }
 div.body1 {
     box-sizing: border-box;
@@ -33,6 +37,7 @@ div#body2 {
     background-color: #8D88AD;
     box-sizing: border-box;
     padding-top: 10px;
+    box-shadow: 2px 2px 0 silver;
 }
 span#title2 {
     font-family: 'Indie Flower', cursive;
