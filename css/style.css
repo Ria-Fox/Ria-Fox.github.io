@@ -14,7 +14,7 @@ div.body1 {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 20px;
-    width: 1000px;
+    max-width: 1000px;
 }
 div.body1 div.body1_container {
     box-sizing: border-box;
