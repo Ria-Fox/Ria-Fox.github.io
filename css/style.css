@@ -32,8 +32,7 @@ div.body1_container div.body1_item {
 div#body2 {
     background-color: #8D88AD;
     box-sizing: border-box;
-    border: 1px solid red;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 span#title2 {
     font-family: 'Indie Flower', cursive;
