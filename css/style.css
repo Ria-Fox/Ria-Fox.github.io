@@ -12,6 +12,7 @@ div#subtitle1 {
 }
 div.body1 {
     box-sizing: border-box;
+    max-width: 1000px;
 }
 div.body1 div.body1_container {
     box-sizing: border-box;
@@ -20,9 +21,10 @@ div.body1 div.body1_container {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     flex-direction: row;
-    max-width: 1000px;
+    width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
+    justify-content:center;
 }
 div.body1_container div#body1_item {
     width: 460px;
