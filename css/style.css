@@ -1,7 +1,22 @@
-div#header {
+body{
+    margin: 0px;
+}
+header {
     background-color: #4A2D74;
     text-align:center;
+    width: 100%;
+    height: 250px;
     border: 0px;
+    margin: -20px 0px 0px;
+    position: fixed;
+    z-index: 1000;
+}
+footer {
+    background-color: #4A2D74;
+    text-align:center;
+    width: 100%;
+    font-family: 'Indie Flower', cursive;
+    color: white;
 }
 div#title1 {
     padding-top: 60px; 
@@ -10,7 +25,12 @@ div#subtitle1 {
     padding-top: 20px; 
     padding-bottom: 60px;
 }
+div#slider {
+    padding-top: 250px;
+    width: 100%;
+}
 div.body1 {
+    position: relative;
     box-sizing: border-box;
     max-width: 1000px;
     margin: 0 auto;
