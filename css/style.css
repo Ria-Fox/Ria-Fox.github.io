@@ -19,6 +19,32 @@ footer {
     font-family: 'Indie Flower', cursive;
     color: white;
 }
+
+a
+{
+    text-decoration: none;
+    color: darkorchid;
+    font-family:'Indie Flower', cursive;
+    font-weight: bold;
+}
+
+a:hover
+{
+    background:darkorchid;
+    color:white;
+}
+
+#body2 a
+{
+    color: darkorchid;
+}
+
+#body2 a:hover
+{
+    background: white;
+    color: #8D88AD;
+}
+
 div#title1 {
     padding-top: 60px; 
 }
