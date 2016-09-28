@@ -141,7 +141,7 @@ section {
     background-size: cover;
     overflow: hidden;
 }
-.section_cont1 {
+.section_cont {
     transition: all 0.7s;
     width: 650px;
     height: 362px;
@@ -173,17 +173,19 @@ section {
 }
 .s13 > a {
     font-size: 20px;
-    color: #33abff;
+    color: white;
     padding: 20px 20px;
     font-weight: bold;
-    border: 1px solid #33abff;
+    border: 1px solid white;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    background-color: #33abff
 }
 
 .s13 > a:hover {
     background-color: #fff;
+    color: #33abff;
 }
 
 .section2 {
@@ -192,58 +194,13 @@ section {
     background-position: 50% 50%;
     background-size: cover;
     overflow: hidden;
-}
-.section_cont2 {
-    width: 100%;
-    height: 470px;
-    display: hidden;
-    margin-left: 130px;
-    position: relative;
-    transition: all 0.7s;
-}
-.section_cont2 > div {
-    position: absolute;
-    top: 0px;
-}
-.s21 {
-    overflow: hidden;
-    width: 247px;
-    height: 469px;
-    background-image: url(img/footer2.png);
-    background-position: 0px 0px;
-    display: inline-block;
-}
-.s21 > div#phone_slide1 {
-    width: 194px;
-    height: 324px;
-    margin-left: 24px;
-    margin-top: 63px;
-    overflow: hidden;
-    background-image: url('img/phone_slide/1.jpg');
-    background-position: 0px 0px;
-    z-index: 30;
-    transition-duration: 0.3s;
-    transition-property: all;
-}
-.s22 {
-    overflow: hidden;
-    width: 640px;
-    height: 225px;
-    margin-top: -410px;
-    margin-left: 330px;
-    background-image: url(img/contents/1.png);
-    background-position: 0px 0px;
-    
-}
+} 
 .section3 {
     background-image:url(img/s31.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     overflow: hidden;
-}
-.section_cont3 {
-    transition: all 0.7s;
 }
 .section_footer {
     transition-property: bottom;

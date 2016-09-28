@@ -28,16 +28,10 @@ $(function(){
     section_pos();
     
     function section_pos(){
-        var s1 = section.find('.section_cont1');
-        var s2 = section.find('.section_cont2');
-        var s3 = section.find('.section_cont3');
-        var s4 = section.find('.section_cont4');
+        var s1 = section.find('.section_cont');
         var center_h = win_height/2-35;
         
         s1.css('margin-top', String(center_h-181)+'px');
-        s2.css('margin-top', String(center_h-235)+'px');
-        s3.css('margin-top', String(center_h-225)+'px');
-        s4.css('margin-top', String(center_h-187)+'px');
         
         section.children().each(function(i){
             if(i>0){
@@ -46,12 +40,6 @@ $(function(){
                     'transition-delay': '0.3s',
                     'transition-duration': '0.5s',
                 });
-            }
-        });
-        
-        s2.children().each(function(i){
-            if(i > 0){
-                $(this).css('left', String(win_width*i)+'px');
             }
         });
     }
