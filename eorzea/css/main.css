@@ -1,0 +1,325 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-family: "Nanum Gothic", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+div#wrap > header {
+    height: 70px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    background: black;
+    z-index: 1000;
+}
+#menu {
+    width: 1200px;
+    display: block;
+    /*overflow: hidden;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    margin:0px;
+    padding: 0px;
+    top: 13px;
+    position: absolute;
+}
+#logo1 {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    color: #ddd;
+    background-image: url('img/abg.png');
+    background-position: 0px 0px;
+    transition: all 0.5s ease;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0px 10px 3.5px;
+    margin: 0px;
+}
+#logo1:hover {
+    color: #33abff;
+    background-position: 0px -130px;
+}
+#logo2 {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    color: #ddd;
+    margin-left: -10px;
+}
+div#wrap > header > #menu > ul {
+    left: 200px;
+    position: relative;
+    margin: 0px;
+    /*overflow: hidden;*/
+    margin-left: 40px;
+}
+div#wrap > header > #menu > ul > li {
+    position: relative;
+    float: left;
+    list-style: none;
+}
+
+div#wrap > header > #menu > ul > li > a {
+    display: block;
+    color: #ddd;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 24.5px 24px;
+    transition: all 0.4s;
+}
+div#wrap > header > #menu > ul > li > a:hover {
+    color: #33abff;
+    background: white;
+}
+#new {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    height: 17px;
+    width: 36px;
+    vertical-align: middle;
+}
+#menu_right {
+    margin:13px;
+    padding: 0px;
+    right: 0px;
+    position: absolute;
+}
+#setting {
+    display: block;
+    padding: 13px 24px;
+    width: 100px;
+    text-align: center;
+    color: #33abff;
+    font-weight: bold;
+    border-color: #33abff;
+    border-style: solid;
+    border-width: 1px;
+    transition: all 0.3s;
+}
+#setting:hover {
+    background: white;
+}
+
+section {
+    /*width: 1200px;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+#section_wrap {
+    height: 100%;
+    transition: all 0.7s ease;
+}
+.cont_wrap {
+    height: 100%;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    transition-property: all;
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+    padding-top:0px;
+}
+.section1 {
+    background-image:url(img/s11.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+}
+.section_cont1 {
+    transition: all 0.7s;
+    width: 492px;
+    height: 362px;
+    z-index: 200;
+    margin-left: 30px;
+}
+.s11 {
+    overflow: hidden;
+    width: 492px;
+    height: 146px;
+    background-image: url(img/footer1.png);
+    background-position: 0px -449px;
+}
+.s12 {
+    overflow: hidden;
+    width: 420px;
+    height: 54px;
+    background-image: url(img/footer1.png);
+    background-position: 0px -160px;
+    margin-top: 40px;
+}
+.s13 {
+    display: inline-block;
+    overflow: hidden;
+    width: 220px;
+    height: 65px;
+    background-image: url(img/footer1.png);
+    background-position: 0px -277px;
+    margin-top: 40px;
+}
+.s14 {
+    display: inline-block;
+    overflow: hidden;
+    width: 220px;
+    height: 65px;
+    background-image: url(img/footer1.png);
+    background-position: -230px -277px;
+    margin-left: 5px;
+}
+.section2 {
+    background-image:url(img/s21.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+}
+.section_cont2 {
+    width: 400%;
+    height: 470px;
+    display: hidden;
+    margin-left: 130px;
+    position: relative;
+    transition: all 0.7s;
+}
+.section_cont2 > div {
+    position: absolute;
+    top: 0px;
+}
+.s21 {
+    overflow: hidden;
+    width: 247px;
+    height: 469px;
+    background-image: url(img/footer2.png);
+    background-position: 0px 0px;
+    display: inline-block;
+}
+.s21 > div#phone_slide1 {
+    width: 194px;
+    height: 324px;
+    margin-left: 24px;
+    margin-top: 63px;
+    overflow: hidden;
+    background-image: url('img/phone_slide/1.jpg');
+    background-position: 0px 0px;
+    z-index: 30;
+    transition-duration: 0.3s;
+    transition-property: all;
+}
+.s22 {
+    overflow: hidden;
+    width: 640px;
+    height: 225px;
+    margin-top: -410px;
+    margin-left: 330px;
+    background-image: url(img/contents/1.png);
+    background-position: 0px 0px;
+    
+}
+.section3 {
+    background-image:url(img/s31.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+}
+.section_cont3 {
+    transition: all 0.7s;
+}
+.section4 {
+    background-image:url(img/s41.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+}
+.section_cont4 {
+    width: 644px;
+    height: 374px;
+    margin-left: 150px;
+    transition: all 0.7s;
+}
+.s41 {
+    overflow: hidden;
+    width: 644px;
+    height: 268px;
+    background-image: url(img/footer4.png);
+    background-position: 0px -300px;
+}
+.s42 {
+    overflow: hidden;
+    width: 357px;
+    height: 40px;
+    background-image: url(img/footer4.png);
+    background-position: 0px -578px;
+    margin-top: 39px;
+    color: black;
+    cursor: default;
+    font-size: 26px;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+.p_arrow {
+    background-image: url(img/bg.png);
+    position: absolute;
+    opacity: 0.4;
+    overflow: hidden;
+    width: 56px;
+    height: 105px;
+    display: inline-block;
+    transition: all 0.7s ease;
+}
+.p_arrow:hover {
+    opacity: 1;
+    cursor:pointer;
+}
+.prev_arrow {
+    background-position: 0px -40px;
+    margin-left: 50px;
+}
+.next_arrow {
+    background-position: -60px -40px;
+    right: 50px;
+}
+.section_footer {
+    transition-property: bottom;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    background: #fff;
+    height:140px;
+    width: 100%;
+    position: absolute;
+    z-index: 500;
+    overflow: hidden;
+}
+.section_footer > div {
+    height:70px;
+    width: 920px;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 35px;
+}
+#vertical_dots {
+    z-index: 20;
+    height: 94px;
+    width: 16px;
+    right: 50px;
+    top: 119px;
+    
+    position: fixed;
+}
+#vertical_dots div{
+    overflow: hidden;
+    height: 16px;
+    height: 16px;
+    margin-bottom: 9px;
+}
