@@ -71,7 +71,7 @@ div#wrap > header > #menu > ul > li > a {
     display: block;
     color: #ddd;
     font-size: 18px;
-    font-weight: bold;
+
     padding: 24.5px 24px;
     transition: all 0.4s;
 }
