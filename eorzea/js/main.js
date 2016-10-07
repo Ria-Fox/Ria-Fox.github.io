@@ -51,10 +51,10 @@ $(function(){
     
     section.on('dragend', function(event){
         var from = act_section;
-        if(event.clientY > dragst && (Math.abs(parseInt(section.css('margin-top'), 10) + win_height * act_section) < 1) && act_section > 0) {//drag up, page down
+        if(event.clientY > dragst && (Math.abs(parseInt(section.css('margin-top'), 10) + win_height * act_section) < 1) && act_section < 2) {//drag up, page down
             page_motion(from, from + 1);
         }
-        else if(event.clientY < dragst && (Math.abs(parseInt(section.css('margin-top'), 10) + win_height * act_section) < 1) && act_section < 2) {//drag down, page up
+        else if(event.clientY < dragst && (Math.abs(parseInt(section.css('margin-top'), 10) + win_height * act_section) < 1) && act_section > 0) {//drag down, page up
             page_motion(from, from - 1);
         }
     });
