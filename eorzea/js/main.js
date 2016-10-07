@@ -72,6 +72,12 @@ $(function(){
             });
         }
         section_pos();
+        section.children().eq(act_section).find('.cont_wrap').css({
+            'padding-top': '0px',
+            'transition-delay': '0.3s',
+            'transition-duration': '0.5s',
+            'transition-timing-function': 'easy-out'
+        });
     });
     
     $window.on('mousewheel DOMMouseScroll', function(event){
@@ -94,7 +100,7 @@ $(function(){
         act_section = to;
         section.css('margin-top', (-1) * act_section * win_height);
         page_dot(from, to);
-        if(from > to){ // page up
+        if(from >= to){ // page up
             section.children().eq(act_section+1).find('.cont_wrap').css({
                 'padding-top': String(3*win_height/4)+'px',
                 'transition-delay': '0.5s',

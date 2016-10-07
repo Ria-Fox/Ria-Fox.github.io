@@ -1,4 +1,16 @@
 @import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+html {
+    font-size: 0.52vw;
+}
+@media all and (max-width: 1200px) {
+    html {
+        font-size: 6.25px;
+    }
+    .section_footer {
+        width: 1200px;
+    }
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -35,6 +47,7 @@ h1 {
     padding: 0px;
     top: 13px;
     position: absolute;
+    font-size: 32px;
 }
 #logo1 {
     display: inline-block;
@@ -109,16 +122,12 @@ div#wrap > header > #menu > ul > li > a:hover {
     border-style: solid;
     border-width: 1px;
     transition: all 0.3s;
+    font-size: 16px;
 }
 #setting:hover {
     background: white;
 }
 
-section {
-    /*width: 1200px;
-    margin-left: auto;
-    margin-right: auto;*/
-}
 #section_wrap {
     height: 100%;
     transition: all 0.7s ease;
@@ -143,36 +152,61 @@ section {
 }
 .section_cont {
     transition: all 0.7s;
+    
     width: 650px;
+    width: 65rem;
+    
     height: 362px;
+    height: 36.2rem;
     z-index: 200;
     margin-left: 30px;
 }
 .s11 {
     overflow: hidden;
+    
     width: 600px;
+    width: 60rem;
+    
     height: 146px;
+    height: 14.6rem;
     color: #ddd;
+    
     font-size: 60px;
+    font-size: 6rem;
     padding-bottom: 10px;
     margin: 10px 0px;
     line-height: 130%;
 }
 .s12 {
     overflow: hidden;
+    
     width: 600px;
+    width: 60rem;
+    
     height: 100px;
+    height: 10rem;
+    
     font-size: 40px;
+    font-size: 4rem;
     color: #ddd;
+    
     margin-top: 40px;
+    margin-top: 4rem;
+    
     margin-bottom: 40px;
+    margin-bottom : 4rem;
 }
 .s13 {
     width: 220px;
+    width: 22rem;
+    
     height: 65px;
+    height: 6.5rem;
 }
 .s13 > a {
     font-size: 20px;
+    font-size: 2rem;
+    
     color: white;
     padding: 20px 20px;
     font-weight: bold;
@@ -207,21 +241,30 @@ section {
     transition-duration: 0.5s;
     transition-timing-function: linear;
     background: #fff;
+    
     height:140px;
+    height: 14vh;
     width: 100%;
     position: absolute;
     z-index: 500;
     overflow: hidden;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    text-align: center;
 }
 .section_footer > p {
+    
     height:70px;
+    height: 7vh;
+    
     width: 1100px;
+    width: 110rem;
     margin: auto;
     margin-top: 35px;
-    text-align: center;
+    margin-top: 3.5vh;
+    
+    
     font-size: 60px;
+    font-size: 6rem;
+    
     font-weight: bold;    
 }
 .foryou {
@@ -232,7 +275,9 @@ section {
     background-color: #33abff;
     padding: 0px 10px;
     border-top-left-radius: 20px;
+    border-top-left-radius: 2vh;
     border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 2vh;
 }
 #vertical_dots {
     z-index: 20;
