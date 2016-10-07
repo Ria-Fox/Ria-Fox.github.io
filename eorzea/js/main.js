@@ -5,7 +5,6 @@ $(function(){
     var act_section = 0;
     var win_height = $window.height();
     var win_width = $window.width();
-    var dragst = 0;
     
     section.children().each(function(i){
         $(this).height(win_height);
@@ -45,17 +44,15 @@ $(function(){
         });
     }
     
-    section.on('dragstart', function(event){
-        dragst = event.clientY;
+    section.on('swipeup', function(event){
+        if((Math.abs(parseInt(section.css('margin-top'), 10) + win_height * act_section) < 1) && act_section < 2) {//drag up, page down
+            page_motion(act_section, act_section + 1);
+        }
     });
     
-    section.on('dragend', function(event){
-        var from = act_section;
-        if(event.clientY > dragst && (Math.abs(parseInt(section.css('margin-top'), 10) + win_height * act_section) < 1) && act_section < 2) {//drag up, page down
-            page_motion(from, from + 1);
-        }
-        else if(event.clientY < dragst && (Math.abs(parseInt(section.css('margin-top'), 10) + win_height * act_section) < 1) && act_section > 0) {//drag down, page up
-            page_motion(from, from - 1);
+    section.on('swipedown', function(event){
+        if((Math.abs(parseInt(section.css('margin-top'), 10) + win_height * act_section) < 1) && act_section > 0) {//drag down, page up
+            page_motion(act_section, act_section - 1);
         }
     });
     
