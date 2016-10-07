@@ -26,6 +26,7 @@ a
     color: darkorchid;
     font-family:'Indie Flower', cursive;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 a:hover
@@ -60,7 +61,7 @@ div.body1 {
     position: relative;
     box-sizing: border-box;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0 20px;
 }
 div.body1 div.body1_container {
@@ -70,16 +71,21 @@ div.body1 div.body1_container {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 10px;
 }
 div.body1_container div.body1_item {
     width: 460px;
     box-sizing: border-box;
     font-size: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 div#body2 {
     background-color: #8D88AD;
     box-sizing: border-box;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 span#title2 {
     font-family: 'Indie Flower', cursive;
@@ -111,4 +117,9 @@ h2#accw {
     color: #FFFFFF;
     font-weight: bold;
     font-family: 'Indie Flower', cursive;
+}
+.border {
+    border: 3px dashed #4A2D74;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
