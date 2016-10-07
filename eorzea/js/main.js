@@ -106,6 +106,12 @@ $(function(){
                 'transition-delay': '0.5s',
                 'transition-duration': '0.05s',
             });
+            section.children().eq(act_section).find('.cont_wrap').css({
+                'padding-top': '0px',
+                'transition-delay': '0.3s',
+                'transition-duration': '0.5s',
+                'transition-timing-function': 'easy-out'
+            });
             section.children().each(function(i){
                 var $this = $(this);
                 $this.find('.section_footer').css({
