@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>DHMO</title>
+    <script>
+        if (document.addEventListener) {
+            document.addEventListener("DOMContentLoaded", function () {
+                document.removeEventListener("DOMContentLoaded", arguments.callee, false);
+                domReady();
+            }, false);
+        } 
+        else if (document.attachEvent) {
+            document.attachEvent("onreadystatechange", function () {
+                if (document.readyState === "complete") {
+                    document.detachEvent("onreadystatechange", arguments.callee);
+                    domReady();
+                }
+            });
+        }
+        //DOM이 모두 로드 되었을 때
+        function domReady () {
+            var button = document.getElementById("button");
+            var bg = document.getElementById("wrap");
+            var first = document.getElementById("first");
+            var last = document.getElementById("last");
+            var menu = document.getElementById("menu");
+            var title = document.getElementById("dhmo");
+            var counter = 0;
+            button.addEventListener("click", function(){
+                switch(counter) {
+                    case 0:
+                        button.style.opacity = 0.3;
+                        counter++;
+                        break;
+                    case 1:
+                        button.style.opacity = 0.5;
+                        counter++;
+                        break;
+                    case 2:
+                        first.className = "";
+                        setTimeout(function(){
+                            counter++;
+                        }, 2000);
+                        counter++;
+                        break;
+                    case 4:
+                        last.className = "";
+                        setTimeout(function(){
+                            counter++;
+                        }, 2000);
+                        counter++;
+                        break;
+                    case 6:
+                        bg.style.opacity = 1;
+                        first.className = "none";
+                        last.className = "none";
+                        menu.className = "none";
+                        setTimeout(function(){
+                            title.className = "";
+                        }, 4000);
+                        counter++;
+                        break;
+                    default:
+                        break;
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="wrap"></div>
+    <div id="dhmo" class="none"><h1>DHMO</h1></div>
+    <div id="menu"><button id="button">Welcome</button></div>
+    <div id="first" class="none"><p>당신이 도착할 곳은 어디일까,</p><span>어쩌면 도착하지 못할지도 모른다.</span></div>
+    <div id="last" class="none"><p>당신이 만날 사람은 누구일까.</p><span>좋은 사람은 아닐 것이다.</span></div>
+    <span>DHMO에 잘 오셨습니다. </span>
+</body>
+</html>
