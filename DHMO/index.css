@@ -1,10 +1,10 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url("http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css");
 body {
     background-color: #000009;
     margin: 0px;
 }
 p {
-    font-family: 'Nanum Brush Script', serif;
+    font-family: 'Nanum Brush Script';
     color: #999;
     cursor: default;
     font-size: 5vmin;
@@ -39,6 +39,9 @@ h1 {
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */  
+}
+iframe {
+    display: none;
 }
 #wrap {
     background: url(giphy1.gif) no-repeat center center fixed;
