@@ -4,18 +4,24 @@ body {
     padding: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     height: 112px;
     width: 1170px;
     display: inline-block;
     text-align: left;
+    margin: 0px 40px;
+    position: relative;
 }
 
 div#logo {
     height: 38px;
     width: 152px;
-    padding: 37px 0px;
-    margin: 0px 170px;
+    padding: 30px 0px 37px 0px;
+    margin: 0px 130px;
     border-top-style: solid;
     border-top-width: 7px;
     border-top-color: #fd95ad;
@@ -32,15 +38,31 @@ div#logo {
     height: 38px;
     width: 152px;
 }
-div#nav {
-    width: 676px;
+
+header>ul {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    position: absolute;
     height: 112px;
+}
+header>ul>li {
     display: inline-block;
     margin: 0px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    list-style: none;
 }
-div#nav>ul {
-    
+header>ul>li>a {
+    display: block;
+    width: 170px;
+    font-size: 17px;
+    color: #8a8383;
+    font-weight: bold;
+    padding: 47px 0px;
+    text-align: center;
 }
-div#nav>ul>li {
-    display: inline-block;
+header>ul>li>a:link, a:visited {
+    color: #8a8383;
 }
