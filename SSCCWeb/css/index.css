@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 112px;
+    width: 1170px;
+    display: inline-block;
+    text-align: left;
+}
+
+div#logo {
+    height: 38px;
+    width: 152px;
+    padding: 37px 0px;
+    margin: 0px 170px;
+    border-top-style: solid;
+    border-top-width: 7px;
+    border-top-color: #fd95ad;
+    display: inline-block;
+}
+
+.logo {
+    align-content: center;
+    display: inline-block;
+    
+}
+
+.logo > img {
+    height: 38px;
+    width: 152px;
+}
+div#nav {
+    width: 676px;
+    height: 112px;
+    display: inline-block;
+    margin: 0px;
+}
+div#nav>ul {
+    
+}
+div#nav>ul>li {
+    display: inline-block;
+}
