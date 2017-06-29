@@ -10,10 +10,10 @@ a {
 
 header {
     height: 112px;
-    width: 1170px;
+    width: 1090px;
     display: inline-block;
     text-align: left;
-    margin: 0px 40px;
+    padding: 0px 40px;
     position: relative;
 }
 
@@ -21,7 +21,7 @@ h1#logo {
     height: 38px;
     width: 152px;
     padding: 30px 0px 37px 0px;
-    margin: 0px 130px;
+    margin: 0px 100px 0px 130px;
     border-top-style: solid;
     border-top-width: 7px;
     border-top-color: #fd95ad;
@@ -90,12 +90,103 @@ header>ul>li>a:link, a:visited {
 }
 .history>.wrap {
     text-align: left;
-    width: 880px;
+    width: 1000px;
     margin-top: 55px;
-    margin-left: 170px;
+    padding-left: 170px;
     display: inline-block;
+    margin-bottom: 80px;
 }
 h2.title1 {
     color: #fd95ad;
-    font-size: 17px;
+    font-size: 19px;
+    margin-bottom: 80px;
+    margin-top: 0px;
+}
+
+
+.table>table {
+    border-spacing: 0px;
+}
+.table>table th {
+    padding: 0px;
+    width: 180px;
+    height: 64px;
+    border-top: 1px solid #a2a5b2;
+    color: #70bbf5;
+}
+.table>table td {
+    border-top: 1px solid #a2a5b2;
+}
+
+.contact {
+    background-color: rgb(29,161,242);
+    text-align: center;
+}
+.contact>.wrap {
+    width: 1170px;
+    display: inline-block;
+    margin: 14px 0px;
+}
+
+.contact>.wrap>#left {
+    width: 410px;
+    display: inline-block;
+    float:left;
+    margin-left: 170px;
+    margin-top: 37px;
+    text-align: left;
+    height: 640px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+span.DM {
+    height: 38px;
+    padding-top: 2px;
+    vertical-align: middle;
+    background-image: url('../image/DM.png');
+    background-repeat: no-repeat;
+    font-weight: normal;
+    padding-left: 48px;
+    display: block;
+    text-align: left;
+}
+span.twt {
+    height: 38px;
+    padding-top: 4px;
+    vertical-align: middle;
+    background-image: url('../image/twet.png');
+    background-repeat: no-repeat;
+    font-weight: normal;
+    padding-left: 48px;
+    display: block;
+    text-align: left;
+    margin-top: 12px;
+}
+.contact>.wrap>#left>div {
+    height: 38px;
+    line-height: 38px;
+    vertical-align: middle;
+}
+.contact>.wrap>#right{
+    width: 580px;
+    display: inline-block;
+    border-left: 1px solid rgb(142, 208, 249);
+    text-align: left;
+}
+.contact>.wrap>#right>#tweet {
+    width: 417px;
+    height: 608px;
+    margin-left: 30px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(26,27,28);
+    text-align: center;
+    color: rgb(119,114,114);
+    padding: 40px 0px;
 }
