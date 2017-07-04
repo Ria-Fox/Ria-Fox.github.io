@@ -86,36 +86,41 @@ header>ul>li>a:link, a:visited {
 
 .history {
     background-color: #fff;
-    text-align: center;
 }
 .history>.wrap {
+    max-width: 1170px;
+    margin: 0px auto;
+}
+.container {
     text-align: left;
-    width: 1000px;
-    margin-top: 55px;
-    padding-left: 170px;
-    display: inline-block;
-    margin-bottom: 80px;
+    max-width: 870px;
+    display: block;
+    margin: 55px auto 80px auto;
 }
 h2.title1 {
     color: #fd95ad;
     font-size: 19px;
-    margin-bottom: 80px;
-    margin-top: 0px;
+    margin : 0px auto 80px 20px;
 }
-
 
 .table>table {
     border-spacing: 0px;
+    margin: 0px 20px;
 }
 .table>table th {
     padding: 0px;
-    width: 180px;
+    min-width: 160px;
+    width: 18%;
     height: 64px;
     border-top: 1px solid #a2a5b2;
     color: #70bbf5;
 }
 .table>table td {
     border-top: 1px solid #a2a5b2;
+}
+
+.gray {
+    color: rgb(198,215,220);
 }
 
 .contact {
