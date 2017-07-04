@@ -91,7 +91,7 @@ header>ul>li>a:link, a:visited {
     max-width: 1170px;
     margin: 0px auto;
 }
-.container {
+.history>.wrap>.container {
     text-align: left;
     max-width: 870px;
     display: block;
@@ -181,12 +181,14 @@ span.twt {
 }
 .contact>.wrap>#right>#tweet {
     width: 417px;
-    height: 608px;
+    max-height: 610px;
     margin-left: 30px;
     margin-top: 19px;
     margin-bottom: 19px;
     display: inline-block;
     border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 footer {
