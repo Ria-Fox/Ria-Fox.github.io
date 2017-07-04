@@ -10,10 +10,11 @@ a {
 
 header {
     height: 112px;
-    width: 1090px;
-    display: inline-block;
+    max-width: 1090px;
+    display: block;
     text-align: left;
     padding: 0px 40px;
+    margin: 0px auto;
     position: relative;
 }
 
@@ -31,7 +32,6 @@ h1#logo {
 .logo {
     align-content: center;
     display: inline-block;
-    
 }
 
 .logo > img {
@@ -65,6 +65,15 @@ header>ul>li>a {
 }
 header>ul>li>a:link, a:visited {
     color: #8a8383;
+}
+
+.menu {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
 }
 
 .banner {
