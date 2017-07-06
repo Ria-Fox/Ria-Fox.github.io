@@ -1,4 +1,14 @@
 @media screen and (min-width: 1100px) {
+    header {
+        height: 112px;
+    }
+    .logo > img {
+        height: 38px;
+        width: 152px;
+    }
+    .logo {
+        padding: 30px 0px 37px 0px;
+    }
     #left {
         width: 410px;
         border-right: 1px solid rgb(142, 208, 249);
@@ -15,11 +25,23 @@
     #historylist {
         display: none;
     }
-    .table {
-        
+    h1#logo {
+        padding-left: 100px;
     }
 }
 @media screen and (max-width: 1099px) {
+    header {
+        height: 112px;
+        flex-direction: column;
+    }
+    .logo {
+        padding: 11px 0px;
+        margin: 10px 0px;
+    }
+    .logo > img {
+        height: 38px;
+        width: 152px;
+    }
     .contact>.wrap>.container {
         flex-wrap: wrap;
     }
@@ -53,10 +75,7 @@
         padding-right: 30px;
     }
     #right>#tweet {
-        width: 100%;
-    }
-    #historylist {
-        
+        width: 110%;
     }
     .table {
         display: none;
@@ -75,7 +94,6 @@ a {
 
 header {
     max-width: 1130px;
-    height: 112px;
     text-align: left;
     padding: 0px 20px;
     margin: auto;
@@ -84,24 +102,17 @@ header {
 }
 
 h1#logo {
+    height: 38px;
     max-width: 392px;
-    padding-left: 100px;
     margin: 0px auto;
     display: block;
 }
 
 .logo {
     width: 152px;
-    height: 38px;
-    padding: 30px 0px 37px 0px;
-    border-top: 7px solid #fd95ad;
     align-content: center;
     display: inline-block;
-}
-
-.logo > img {
-    height: 38px;
-    width: 152px;
+    border-top: 7px solid #fd95ad;
 }
 
 nav {
@@ -126,15 +137,6 @@ nav div>a {
     max-width: 170px;
     margin: auto;
     color: #8a8383;
-}
-
-.menu {
-    visibility: hidden;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 40px;
-    height: 40px;
 }
 
 .banner {
