@@ -9,6 +9,15 @@
     #right>#tweet {
         width: 420px;
     }
+    .table>table th {
+        min-width: 160px;
+    }
+    #historylist {
+        display: none;
+    }
+    .table {
+        
+    }
 }
 @media screen and (max-width: 1099px) {
     .contact>.wrap>.container {
@@ -45,6 +54,12 @@
     }
     #right>#tweet {
         width: 100%;
+    }
+    #historylist {
+        
+    }
+    .table {
+        display: none;
     }
 }
 
@@ -151,11 +166,11 @@ nav div>a {
     display: block;
     margin: 55px auto 80px auto;
 }
+
 h2.title {
     font-size: 24pt;
     font-weight: bold;
 }
-
 h2.pink {
     margin-bottom: 80px;
     margin-left: 20px;
@@ -174,7 +189,6 @@ h2.white {
 }
 .table>table th {
     padding: 0px;
-    min-width: 160px;
     width: 18%;
     height: 64px;
     border-top: 1px solid #a2a5b2;
@@ -182,6 +196,32 @@ h2.white {
 }
 .table>table td {
     border-top: 1px solid #a2a5b2;
+}
+
+#historylist {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#historylist li {
+    margin: 0px 20px;
+    
+}
+
+span.subth {
+    padding: 10px 0px;
+    width: 100%;
+    border-top: 1px solid #a2a5b2;
+    color: #70bbf5;
+    font-weight: bold;
+    display: block;
+}
+span.subtd {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 18%;
+    font-size: 16px;
 }
 
 .gray {
