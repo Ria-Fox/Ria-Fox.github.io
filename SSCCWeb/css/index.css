@@ -149,8 +149,6 @@ footer {
 }
 
 h2.pink {
-    margin-bottom: 80px;
-    margin-left: 20px;
     color: #fd95ad;
 }
 
@@ -159,8 +157,26 @@ h2.white {
     margin: 0px;
 }
 
+.white {
+    color: white;
+}
+.white:link, :visited {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+.black:link, :visited {
+    color: black;
+}
+
 .gray {
     color: rgb(198,215,220);
+}
+
+.graybg {
+    background-color: #444;
 }
 
 .mint {
@@ -175,11 +191,37 @@ h2.white {
     background-color: #000;
 }
 
-.sbutton {
-    height: 40px;
-    border-radius: 20px;
+.pinkbg {
+    background-color: #fd95ad;
 }
 
+.sbutton {
+    height: 40px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 13px;
+}
+.sbutton:link, :visited {
+    text-decoration: none;
+}
+
+.fs15 {
+    font-size: 15px;
+}
+
+.fs20 {
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+div.bold {
+    margin: 30px auto;
+}
 
 /* tag classes/specific classes */
 
@@ -223,22 +265,22 @@ nav div>a {
     padding: 0px;
     max-width: 1170px;
     height: 495px;
-    background-color: #444;
     display: block;
 }
 
-.history {
-    background-color: #fff;
-}
-.history>.wrap {
+#wmain>.wrap {
     max-width: 1170px;
     margin: 0px auto;
 }
-.history>.wrap>.container {
+#wmain>.wrap>.container {
     text-align: left;
     max-width: 870px;
     display: block;
     margin: 55px auto 80px auto;
+}
+#wmain>.wrap>.container>* {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 h2.title {
@@ -246,9 +288,12 @@ h2.title {
     font-weight: bold;
 }
 
+.mt80 {
+    margin-top: 80px;
+}
+
 .table>table {
     border-spacing: 0px;
-    margin: 0px 20px;
     font-size: 16px;
 }
 .table>table th {
@@ -347,4 +392,28 @@ span.twt {
     border-radius: 10px;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.part {
+    height: 495px;
+    display: block;
+    background-image: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.part>div {
+    padding-top: 100px;
+    color: rgb(211,211,211);
+}
+#parth1 {
+    padding-bottom: 55px;
+}
+#parth2 {
+    padding-top: 70px;
+}
+
+#parth3 {
+    max-width: 280px;
+    display: block;
+    margin: 30px auto;
 }
