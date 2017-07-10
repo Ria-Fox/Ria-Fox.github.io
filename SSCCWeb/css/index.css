@@ -18,8 +18,9 @@
         width: 680px;
     }
     nav div {
-        padding-top: 45px;
+        padding-top: 38px;
         max-width: 170px;
+        margin-top: 7px;
     }
     #left {
         width: 410px;
@@ -64,6 +65,8 @@
     }
     nav div {
         width: 25%;
+        padding-top: -7px;
+        margin-top: 7px;
     }
     nav div>a {
         margin: 0px;
@@ -113,6 +116,7 @@
     }
 }
 
+/* common classes */
 body {
     text-align: center;
     margin: 0px;
@@ -132,13 +136,60 @@ header {
     display: flex;
 }
 
+footer {
+    background-color: rgb(26,27,28);
+    text-align: center;
+    color: rgb(119,114,114);
+    padding: 40px 0px;
+}
+
+.pborder {
+    border-top: 7px solid #fd95ad;
+    margin-top: 0px !important; 
+}
+
+h2.pink {
+    margin-bottom: 80px;
+    margin-left: 20px;
+    color: #fd95ad;
+}
+
+h2.white {
+    color: white;
+    margin: 0px;
+}
+
+.gray {
+    color: rgb(198,215,220);
+}
+
+.mint {
+    color: rgb(0, 226, 170);
+}
+
+.mintbg {
+    background-color: rgb(0, 226, 170);
+}
+
+.blackbg {
+    background-color: #000;
+}
+
+.sbutton {
+    height: 40px;
+    border-radius: 20px;
+}
+
+
+/* tag classes/specific classes */
+
 .logo {
     align-content: center;
     display: inline-block;
-    border-top: 7px solid #fd95ad;
     background-image: url(../image/Logo.png);
     background-repeat: no-repeat;
     background-position: center center;
+    margin-top: 7px;
 }
 
 nav {
@@ -147,7 +198,8 @@ nav {
     display: flex;
 }
 nav div {
-    margin: 0px auto;
+    margin-left: auto;
+    margin-right: auto;
     flex: 1;
     display: flex;
     align-content: center;
@@ -161,7 +213,6 @@ nav div>a {
 }
 
 .banner {
-    background-color: #000;
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -193,16 +244,6 @@ nav div>a {
 h2.title {
     font-size: 24pt;
     font-weight: bold;
-}
-h2.pink {
-    margin-bottom: 80px;
-    margin-left: 20px;
-    color: #fd95ad;
-}
-
-h2.white {
-    color: white;
-    margin: 0px;
 }
 
 .table>table {
@@ -245,10 +286,6 @@ span.subtd {
     margin-bottom: 10px;
     margin-left: 18%;
     font-size: 16px;
-}
-
-.gray {
-    color: rgb(198,215,220);
 }
 
 .contact {
@@ -310,11 +347,4 @@ span.twt {
     border-radius: 10px;
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-footer {
-    background-color: rgb(26,27,28);
-    text-align: center;
-    color: rgb(119,114,114);
-    padding: 40px 0px;
 }
