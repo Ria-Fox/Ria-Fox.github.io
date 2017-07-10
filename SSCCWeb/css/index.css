@@ -114,6 +114,10 @@
     .table {
         display: none;
     }
+    
+    .banner>.wrap {
+        height: auto !important;
+    }
 }
 
 /* common classes */
@@ -271,7 +275,6 @@ nav div>a {
     text-align: center;
     margin: 0px;
     padding: 0px;
-    height: 495px;
 }
 .banner>.wrap {
     margin: 0px auto;
@@ -436,4 +439,50 @@ span.twt {
     display: block;
     padding: auto 35px;
     margin: 0px auto;
+}
+
+#qna_cont {
+    padding: 30px 0px;
+    margin: 0px auto !important;
+}
+
+#qna {
+    border-collapse: collapse;
+}
+#qna tr th:nth-child(1) {
+    white-space: nowrap;
+}
+#qna tr th:nth-child(2) {
+    padding-left: 10px;
+}
+#qna tr th {
+    vertical-align: top;
+}
+#qna tr td {
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+
+.diff tr th:nth-child(2) {
+    padding-left: 0px !important;
+}
+.diff tr td {
+    padding-left: 0px !important;
+}
+
+#part_done {
+    max-width: 600px;
+    text-align: center !important;
+    background-image: url(../image/done.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto;
+    padding-top: 140px;
+}
+
+#done_button {
+    width: 210px;
+    font-weight: bold;
+    margin: 80px auto;
+    
 }
