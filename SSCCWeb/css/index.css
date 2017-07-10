@@ -160,14 +160,14 @@ h2.white {
 .white {
     color: white;
 }
-.white:link, :visited {
+.white:link, .white:visited {
     color: white;
 }
 
 .black {
     color: black;
 }
-.black:link, :visited {
+.black:link, .black:visited {
     color: black;
 }
 
@@ -195,16 +195,18 @@ h2.white {
     background-color: #fd95ad;
 }
 
+.bluebg {
+    background-color: rgb(29,161,242);
+}
+
 .sbutton {
     height: 40px;
     display: block;
     border-radius: 20px;
     text-decoration: none;
     line-height: 40px;
+    text-align: center;
     font-size: 13px;
-}
-.sbutton:link, :visited {
-    text-decoration: none;
 }
 
 .fs15 {
@@ -221,6 +223,17 @@ h2.white {
 
 div.bold {
     margin: 30px auto;
+}
+
+.nobordercont > * {
+    border-width: 0px !important;
+}
+.nobordercont > th {
+    vertical-align: top;
+}
+.nobordercont > td {
+    margin-bottom: 30px;
+    display: block;
 }
 
 /* tag classes/specific classes */
@@ -412,8 +425,15 @@ span.twt {
     padding-top: 70px;
 }
 
-#parth3 {
+#partbutton {
     max-width: 280px;
     display: block;
     margin: 30px auto;
+}
+
+#publishbutton {
+    max-width: 140px;
+    display: block;
+    padding: auto 35px;
+    margin: 0px auto;
 }
