@@ -1,3 +1,6 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+
 @media screen and (min-width: 1170px) {
     header {
         height: 112px;
@@ -125,6 +128,7 @@ body {
     text-align: center;
     margin: 0px;
     padding: 0px;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 }
 
 a {
@@ -176,7 +180,7 @@ h2.white {
 }
 
 .gray {
-    color: rgb(198,215,220);
+    color: rgb(198,215,220) !important;
 }
 
 .graybg {
@@ -507,8 +511,16 @@ span.twt {
 }
 #semi_nav {
     display: block;
-    max-width: 300px;
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
 }
+
+#semi_nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+
 #semi_nav li {
     background-image: url(../image/prev_select.png);
     background-repeat: no-repeat;
@@ -517,14 +529,78 @@ span.twt {
     list-style: none;
     border-top: 1px solid white;
     display: block;
+    text-align: right;
+    line-height: 41px;
 }
+
+#semi_nav li>div {
+    margin-right: 10px;
+    display: block;
+    color: rgb(198,215,220)
+}
+
 #semi_nav li.selected {
     width: 240px !important;
 }
+
+#semi_nav li.selected>div {
+    margin-right: 20px !important;
+    color: white;
+    font-weight: bold;
+}
+
 #semi_sect {
     display: block;
-    max-width: 740px;
+    width: 740px;
 }
+
+#semi_sect>div:nth-child(1) {
+    display: flex;
+}
+
+#semi_sect>div:nth-child(1)>div:nth-child(2) {
+    width: 420px;
+}
+
+#semi_sect>div:nth-child(1) span.gray {
+    display: inline !important;
+}
+
+#semi_sect>div:nth-child(1)>div:nth-child(2) span {
+    display: block;
+    margin: 10px auto 10px 5px;
+    padding: 0px;
+}
+
+#cover {
+    display: block;
+    width: 300px;
+    height: 423px;
+    background-image: url(../image/Cover_1st.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 423px;
+    margin-right: 16px;
+    margin-bottom: 28px;
+}
+
+.btitle {
+    height: 41px;
+    width: 100%;
+    display: block;
+    color: #fd95ad;
+    border: 1px solid #fd95ad;
+    padding-left: 20px !important;
+    line-height: 41px;
+    margin: 0px !important;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
 
 .acc {
     width: 117px;
