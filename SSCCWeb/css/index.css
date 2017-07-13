@@ -203,6 +203,10 @@ h2.white {
     background-color: rgb(29,161,242);
 }
 
+.semiblackbg {
+    background-color: rgb(26,27,28);
+}
+
 .sbutton {
     height: 40px;
     display: block;
@@ -486,3 +490,34 @@ span.twt {
     margin: 80px auto;
 }
 
+#prev_sect {
+    max-width: 1170px;
+    margin: 0px auto;
+}
+#prev_sect>.container {
+    text-align: left;
+    max-width: 1040px;
+    display: flex;
+    margin: 55px auto;
+    border-collapse: collapse;
+}
+#semi_nav {
+    display: block;
+    max-width: 300px;
+}
+#semi_nav li {
+    background-image: url(../image/prev_select.png);
+    background-repeat: no-repeat;
+    width: 232px;
+    height: 41px;
+    list-style: none;
+    border-top: 1px solid white;
+    display: block;
+}
+#semi_nav li.selected {
+    width: 240px !important;
+}
+#semi_sect {
+    display: block;
+    max-width: 740px;
+}
