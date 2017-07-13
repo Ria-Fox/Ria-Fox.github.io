@@ -199,6 +199,10 @@ h2.white {
     background-color: #fd95ad;
 }
 
+.blue {
+    color: rgb(29,161,242);
+}
+
 .bluebg {
     background-color: rgb(29,161,242);
 }
@@ -520,4 +524,20 @@ span.twt {
 #semi_sect {
     display: block;
     max-width: 740px;
+}
+
+.acc {
+    width: 117px;
+    height: 16px;
+    display: block;
+}
+
+#credit {
+    margin: 0px auto !important;
+    padding-top: 23px;
+    padding-bottom: 31px;
+}
+#credit span {
+    margin-top: 8px;
+    display: block;
 }
