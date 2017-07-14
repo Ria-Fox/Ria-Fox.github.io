@@ -44,6 +44,66 @@
     h1#logo {
         padding-left: 100px;
     }
+    
+    #prev_sect>.container {
+        display: flex;
+        margin: 55px auto;
+    }
+    
+    #semi_nav {
+        width: 300px;
+        margin: 0px;
+    }
+    
+    #semi_nav li {
+        width: 232px;
+        text-align: right;
+        background-image: url(../image/prev_select.png);
+        height: 41px;
+        border-top: 1px solid white;
+        line-height: 41px;
+    }
+    
+    #semi_nav li>div {
+        margin-right: 10px;
+    }
+    
+    #semi_nav li.selected {
+        width: 240px !important;
+    }
+    
+    #semi_nav li.selected>div {
+        margin-right: 20px !important;
+    }
+    
+    #semi_sect {
+        width: 740px;
+    }
+    
+    #semi_sect>div:nth-child(1) {
+        display: flex;
+    }
+    
+    #cover {
+        margin-right: 16px;
+        margin-bottom: 28px;
+    }
+    
+    #info {
+        width: 420px;
+    }
+    
+    .btitle {
+        padding-left: 20px !important;
+    }
+    
+    .part>div {
+        padding-top: 100px;
+    }
+    .lists a.rbutton {
+        width: 96px;
+    }
+
 }
 @media screen and (max-width: 1170px) {
     header {
@@ -120,6 +180,82 @@
     
     .banner>.wrap {
         height: auto !important;
+    }
+    
+    #prev_sect>.container {
+        display: block;
+    }
+    
+    #semi_nav {
+        margin: 0px 20px;
+    }
+    
+    #semi_nav ul {
+        display: flex; 
+    }
+    
+    #semi_nav li {
+        width: 100%;
+        text-align: center;
+        background-image: url(../image/prev_select_mobile.png);
+        height: 40px;
+        line-height: 40px;
+        background-size: 100% 52px;
+        border-right: 1px solid white;
+    }
+    
+    #semi_nav li.selected {
+        padding-bottom: 14px !important;
+    }
+    
+    #semi_sect {
+        margin: 0px 20px;
+    }
+    
+    #semi_sect>div:nth-child(1) {
+        display: block;
+        align-items: center;
+    }
+    
+    #cover {
+        margin: 20px auto;
+    }
+    
+    #info {
+        width: 100%;
+        margin: 0px auto;
+    }
+    
+    #info span {
+        text-align: center;
+    }
+    
+    .btitle {
+        text-align: center;
+    }
+    
+    #info>a.sbutton {
+        margin: 30px auto !important;
+    }
+    
+    #semi_sect>div:nth-of-type(2)>span.gray {
+        text-align: center;
+    }
+    
+    #congimg_1st {
+        justify-content: center;
+    }
+    
+    .part>div {
+        padding: 50px 20px 20px 20px;
+    }
+    
+    .lists>div {
+        width: 80%;
+    }
+    
+    .lists a.rbutton {
+        width: 20%;
     }
 }
 
@@ -431,7 +567,6 @@ span.twt {
     background-size: cover;
 }
 .part>div {
-    padding-top: 100px;
     color: rgb(211,211,211);
 }
 #parth1 {
@@ -506,14 +641,10 @@ span.twt {
 #prev_sect>.container {
     text-align: left;
     max-width: 1040px;
-    display: flex;
-    margin: 55px auto;
     border-collapse: collapse;
 }
 #semi_nav {
     display: block;
-    width: 300px;
-    margin: 0px;
     padding: 0px;
 }
 
@@ -523,55 +654,34 @@ span.twt {
 }
 
 #semi_nav li {
-    background-image: url(../image/prev_select.png);
     background-repeat: no-repeat;
-    width: 232px;
-    height: 41px;
     list-style: none;
-    border-top: 1px solid white;
     display: block;
-    text-align: right;
-    line-height: 41px;
 }
 
 #semi_nav li>div {
-    margin-right: 10px;
     display: block;
     color: rgb(198,215,220)
 }
 
-#semi_nav li.selected {
-    width: 240px !important;
-}
-
 #semi_nav li.selected>div {
-    margin-right: 20px !important;
     color: white;
     font-weight: bold;
 }
 
 #semi_sect {
     display: block;
-    width: 740px;
 }
 
 #semi_sect span {
     font-size: 14px;
 }
 
-#semi_sect>div:nth-child(1) {
-    display: flex;
-}
-
-#semi_sect>div:nth-child(1)>div:nth-child(2) {
-    width: 420px;
-}
-
 #semi_sect>div:nth-child(1) span.gray {
     display: inline !important;
 }
 
-#semi_sect>div:nth-child(1)>div:nth-child(2) span {
+#info span {
     display: block;
     margin-top: 10px;
     margin-left: 5px;
@@ -585,8 +695,7 @@ span.twt {
     background-image: url(../image/Cover_1st.jpg);
     background-repeat: no-repeat;
     background-size: 300px 423px;
-    margin-right: 16px;
-    margin-bottom: 28px;
+    
 }
 
 .btitle {
@@ -595,7 +704,6 @@ span.twt {
     display: block;
     color: #fd95ad;
     border: 1px solid #fd95ad;
-    padding-left: 20px !important;
     line-height: 41px;
     margin: 0px !important;
     font-weight: bold;
@@ -638,7 +746,6 @@ div.lists:nth-of-type(1) {
 
 .lists a.rbutton {
     height: 30px;
-    width: 96px;
     line-height: 30px;
     border: 2px solid rgb(198,215,220);
     border-radius: 17px;
@@ -651,11 +758,18 @@ div.lists:nth-of-type(1) {
     display: flex;
     flex-wrap: wrap;
     margin-left: 5px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 #congimg_1st a {
-    height: 220px;
+    padding-top: 220px;
     display: block;
     background-repeat: no-repeat;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    
 }
 #congimg_1st a:nth-of-type(1) {
     background-image: url(../resources/Congratulatory_1st_01.png);
@@ -665,6 +779,11 @@ div.lists:nth-of-type(1) {
 
 #semi_sect>div:nth-of-type(2)>span.gray {
     margin-left: 5px;
+    border-top: 1px solid rgb(228, 231, 239);
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
