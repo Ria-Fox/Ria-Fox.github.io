@@ -769,7 +769,7 @@ div.lists:nth-of-type(1) {
     line-height: 30px;
     text-align: center;
     text-decoration: none;
-    
+    color: black;
 }
 #congimg_1st a:nth-of-type(1) {
     background-image: url(../resources/Congratulatory_1st_01.png);
