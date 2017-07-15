@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width">
     <title>SIG SC :: 학술향 동인 서클</title>
     <link href="css/index.css" rel="stylesheet">
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        function selectDivs(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "nㅋone";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>      
 </head>
 <body>
     <header>
@@ -22,7 +44,49 @@
     <section>
        
         <div class="banner blackbg">
-            <div class="wrap graybg"></div>
+            <div class="wrap slides">
+                
+                <div class="slider">
+                    <div class="mySlides">
+                        <div>
+                            <div>
+                                <span class="white bold">SIG SC는?</span>
+                                <div class="wborder">
+                                    SIG SC(Special Interest Group on Sub-Culture)는 한국의 학술향 동인 서클로, <br>서브컬쳐에 관련된 학술적인 접근과 학문 분야들에 대한 서브컬쳐적 접근을 지향하고 있습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div>
+                            <div>
+                                <span class="white bold">SIG SC는?</span>
+                                <div class="wborder">
+                                    논리적 가상 컨퍼런스인 SIG SC Conference의 개최를 통해 참가자들 간의 성과를 공유하고 <br>결과물을 회지 Proceedings of SSCC로 발간하고 있습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div>
+                            <div>
+                                <span class="white bold">SIG SC는?</span>
+                                <div class="wborder">
+                                    공식 트위터 계정 링크 : https://twitter.com/SigSubCulture <br>
+                                    Contact : sigsubculture@gmail.com
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="display-left" onclick="plusDivs(-1)"></button>
+                <button class="display-right" onclick="plusDivs(1)"></button>
+                <button class="display" onclick="selectDivs(1)">1</button>
+                <button class="display" onclick="selectDivs(2)">2</button>
+                <button class="display" onclick="selectDivs(3)">3</button>
+                
+            </div>
         </div>
         
         

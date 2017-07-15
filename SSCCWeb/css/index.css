@@ -906,3 +906,92 @@ span.nav_notice {
 nav span:after {
     content: "Event!";
 }
+
+.slides {
+    height: 495px;
+    display: block;
+    background-image: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.slider button {
+    cursor: pointer;
+}
+.mySlides {
+    display: block;
+    color: white;
+    left: 1170px;
+}
+.mySlides>div {
+    position: relative;
+    display: block;
+    width: 1170px;
+    height: 495px;
+}
+
+.mySlides>div>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.display-left {
+    width: 42px;
+    height: 42px;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    display: block;
+    left: 60px;
+    top: 50%;
+    transform: translate(0%,-50%);
+    background-image: url(../image/leftbutton.png);
+    background-repeat: no-repeat;
+    border-width: 0px;
+    background-color: transparent;
+}
+.display-right {
+    width: 42px;
+    height: 42px;
+    margin: auto 0px;
+    position: absolute;
+    display: block;
+    right: 60px;
+    top: 50%;
+    transform: translate(0%,-50%);
+    background-image: url(../image/rightbutton.png);
+    background-repeat: no-repeat;
+    border-width: 0px;
+    background-color: transparent;
+}
+.display {
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    display: block;
+    bottom: 30px;
+}
+
+div.display:nth-of-type(1) {
+    
+}
+
+.wborder {
+    margin: 20px;
+    border: 1px solid white;
+    width: 800px;
+    padding: 10px;
+    display: block;
+}
