@@ -334,7 +334,9 @@ h2.white {
 .blackbg {
     background-color: #000;
 }
-
+.pink {
+    color: #fd95ad;
+}
 .pinkbg {
     background-color: #fd95ad;
 }
@@ -785,7 +787,6 @@ div.lists:nth-of-type(1) {
     padding-bottom: 20px;
 }
 
-
 .acc {
     width: 117px;
     height: 16px;
@@ -799,5 +800,68 @@ div.lists:nth-of-type(1) {
 }
 #credit span {
     margin-top: 8px;
+    display: block;
+}
+.notice {
+    display: block;
+    padding: 20px 0px;
+    border-top: 1px solid gray;
+}
+div.notice:nth-of-type(1) {
+    border-top-width: 0px !important;
+}
+.notice>div.pinkbg {
+    width: 45px;
+    height: 11px;
+    display: block;
+}
+.notice>span.pink {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.notice>span.pink>span:nth-of-type(1) {
+    padding-right: 30px;
+}
+.notice>span.black {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: block;
+    color: black;
+    font-size: 14px;
+}
+.notice>span.black>img {
+    display: block;
+    margin: 10px 0px;
+}
+.date {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    width: 100%;
+}
+span.event {
+    background-color: #fd95ad;
+    padding: 0px 3px 0px 4px;
+    height: 13px;
+    line-height: 13px;
+    font-size: 8px;
+    color: white;
+    text-align: center;
+    margin: auto 5px auto 0px;
+    display: block;
+}
+
+span.news {
+    background-color: rgb(29,161,242);
+    padding: 0px 6px;
+    height: 13px;
+    line-height: 13px;
+    font-size: 8px;
+    color: white;
+    text-align: center;
+    margin: auto 5px auto 0px;
     display: block;
 }
