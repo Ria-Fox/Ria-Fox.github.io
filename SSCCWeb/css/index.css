@@ -883,6 +883,10 @@ nav>div>a:nth-of-type(4) {
     position: relative;
 }
 
+#notice {
+    margin: 0px auto !important;
+}
+
 /* 메뉴의 <알림 사항> 옆에 두실 문구 (Event! or New!)를 수정하고 싶으시다면 
 /* 밑의 background-color와 content를 수정해주시기 바랍니다. 
 */
