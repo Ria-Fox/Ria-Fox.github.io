@@ -110,7 +110,28 @@
         top: 30%;
         right: 8%;
     }
-
+    
+    .mySlides>div>div {
+        left: 50%;
+    }
+    
+    .wborder {
+        width: 800px;
+    }
+    
+    .displays>div {
+        width: 10%;
+    }
+    
+    .display-left {
+        left: 60px;
+        top: 50%;
+    }
+    
+    .display-right {
+        right: 60px;
+        top: 50%;
+    }
 }
 @media screen and (max-width: 1170px) {
     header {
@@ -186,7 +207,19 @@
     }
     
     .banner>.wrap {
-        height: auto !important;
+        width: 100%;
+    }
+    
+    .mySlides>div{
+        width: 100% !important;
+    }
+    
+    .mySlides>div>div {
+        left: 50vw;
+    }
+    
+    .wborder {
+        width: 80vw;
     }
     
     #prev_sect>.container {
@@ -266,6 +299,19 @@
     }
     nav span {
         display: inline !important;
+    }
+    
+    .display-left {
+        left: 10px;
+        bottom: 30px;
+    }
+    .display-right {
+        right: 10px;
+        bottom: 30px;
+    }
+    
+    .displays>div {
+        width: 20%;
     }
 }
 
@@ -918,18 +964,24 @@ nav span:after {
 
 .slider {
     position: relative;
-    overflow: hidden;
     width: 100%;
     height: 100%;
     display: block;
 }
-.slider button {
+button {
     cursor: pointer;
 }
 .mySlides {
     display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     color: white;
-    left: 1170px;
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+.slider>.selected {
+    opacity: 1 !important;
 }
 .mySlides>div {
     position: relative;
@@ -941,7 +993,6 @@ nav span:after {
 .mySlides>div>div {
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -952,8 +1003,6 @@ nav span:after {
     margin-bottom: auto;
     position: absolute;
     display: block;
-    left: 60px;
-    top: 50%;
     transform: translate(0%,-50%);
     background-image: url(../image/leftbutton.png);
     background-repeat: no-repeat;
@@ -966,8 +1015,6 @@ nav span:after {
     margin: auto 0px;
     position: absolute;
     display: block;
-    right: 60px;
-    top: 50%;
     transform: translate(0%,-50%);
     background-image: url(../image/rightbutton.png);
     background-repeat: no-repeat;
@@ -975,23 +1022,36 @@ nav span:after {
     background-color: transparent;
 }
 .display {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     margin-top: auto;
     margin-bottom: auto;
-    position: absolute;
     display: block;
+    background-image: url(../image/notselectedbutton.png);
+    background-color: transparent;
+    border-width: 0px;
+    transition: all 1s ease-out;
+}
+
+button.selected {
+    background-image: url(../image/selectedbutton.png);
+}
+
+.displays {
+    position: absolute;
+    width: 100%;
     bottom: 30px;
 }
 
-div.display:nth-of-type(1) {
-    
+.displays>div {
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .wborder {
     margin: 20px;
     border: 1px solid white;
-    width: 800px;
     padding: 10px;
     display: block;
 }

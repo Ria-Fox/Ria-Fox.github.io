@@ -7,8 +7,12 @@
     <link href="css/index.css" rel="stylesheet">
     <script>
         var slideIndex = 1;
+        var slides = setInterval(function() {
+            showDivs(slideIndex += 1);
+        }, 3000);
         showDivs(slideIndex);
-
+        
+        
         function plusDivs(n) {
             showDivs(slideIndex += n);
         }
@@ -17,14 +21,21 @@
         }
 
         function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "nㅋone";  
-          }
-          x[slideIndex-1].style.display = "block";  
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var y = document.getElementsByClassName("display");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.remove("selected");
+                y[i].classList.remove("selected");
+            }
+            x[slideIndex-1].classList.add("selected");
+            y[slideIndex-1].classList.add("selected");
+            clearInterval(slides);
+            slides = setInterval(function() {
+                showDivs(slideIndex += 1);
+            }, 3000);
         }
     </script>      
 </head>
@@ -47,7 +58,7 @@
             <div class="wrap slides">
                 
                 <div class="slider">
-                    <div class="mySlides">
+                    <div class="mySlides selected">
                         <div>
                             <div>
                                 <span class="white bold">SIG SC는?</span>
@@ -82,10 +93,13 @@
                 </div>
                 <button class="display-left" onclick="plusDivs(-1)"></button>
                 <button class="display-right" onclick="plusDivs(1)"></button>
-                <button class="display" onclick="selectDivs(1)">1</button>
-                <button class="display" onclick="selectDivs(2)">2</button>
-                <button class="display" onclick="selectDivs(3)">3</button>
-                
+                <div class="displays">
+                    <div>
+                        <button class="display selected" onclick="selectDivs(1)"></button>
+                        <button class="display" onclick="selectDivs(2)"></button>
+                        <button class="display" onclick="selectDivs(3)"></button>
+                    </div>
+                </div>
             </div>
         </div>
         
