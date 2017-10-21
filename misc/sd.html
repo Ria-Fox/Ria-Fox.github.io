@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        h3 {
+        h3, h4, h5 {
             margin-bottom: 5px;
         }
     </style>
@@ -61,17 +61,52 @@
 
     <h2>Software Configuration Management</h2>
     <h3>Definition</h3>
-    소프트웨어 시스템의 발전을 컨트롤하기 위한 방법
+    소프트웨어 시스템의 개발 과정(Evolution)을 컨트롤하기 위한 방법, <b>큰 프로젝트일수록 중요</b>
+    
     <h3>Four major aspects</h3>
     Version control, building, change management, releasing
     <br/><br/>
-    <b>큰 프로젝트일수록 중요</b>
+    
     
     <h3>Version Control System(VCS)</h3>
     여러 버전의 시스템 컨포넌트를 지속적으로 모니터링<br/>
     여러 다른 개발자와 같이 작업하기 위함<br/>
     Revert cahnges, go back in time to a specific version<br/>
     <h4>Codeline & Baseline</h4>
+    Codeline : a sequence of versions of source code<br/>
+    Baseline: a set of component versions that make up a system<br/>
+    
+    <h4>Check-in & Check-out</h4>
+    VCS는 Remote server와 개발자의 Workspace로 구성<br/>
+    Check-in : Workspace -> Server <br/>
+    Check-out : Server -> Workspace
+    
+    <h2>Git: Open Source Distributed VCS</h2>
+    <h3>Git Basics</h3>
+    <h4>Adding a New File to Track</h4>
+    Track a new file or stage a modified file : <i>git add [filename>]</i> <br/>
+    Check the status of your (tracked) files : <i>git status </i>
+    <h4>Commit/Push Local Changes</h4>
+    Commit (tracked) local changes made to <b>your local repository</b> : <i>git commit -m '[a meaningful dscriptive message]'</i><br/>
+    Push your commits to the remote repository : <i>git push origin [branch name]</i>
+    <h4>Updating Other Local Copies</h4>
+    Pull changes form the remote repository : <i>git pull origin master</i><br/>
+    View the commit history : <i>git log</i>
+    
+    <h2>Version Control Workflow</h2>
+    1. Repository contains complete history <br/>
+    2. Pull latest version<br/>
+    3. Work on the code<br/>
+    4. Commit and then push, making a new version of the software<br/>
+    
+    <h3>Parallel Work</h3>
+    Pull V23 -> <br/>
+    A : change and push V24 <br/>
+    B : change and push after V24 -> Merge! <br/>
+    
+    <h3>Golden Rule of VCS</h3>
+    <h4>Commit (and push) frequently!</h4>
+    break work into small steps (Chapter 6 -> 에러가 발생할 경우 커밋 주기가 짧을수록 찾기 쉬워짐) <br/>
     
 </body>
 </html>
