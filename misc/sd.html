@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        h3, h4, h5 {
+        h3{
             margin-bottom: 5px;
+        }
+        h4, h5 {
+            margin-bottom: 5px;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -107,6 +111,26 @@
     <h3>Golden Rule of VCS</h3>
     <h4>Commit (and push) frequently!</h4>
     break work into small steps (Chapter 6 -> 에러가 발생할 경우 커밋 주기가 짧을수록 찾기 쉬워짐) <br/>
+    <h4>커밋 주기가 길어질 수록</h4> : 다른 개발자와 간섭이 많아지고 머지하기 힘듬 <br/>
+    
+    <h3>Branching</h3>
+    <h4>Encourage branches</h4> : use of short-lived like <b>new functions, fixing bugs, experimental versions...</b><br/>
+    support different hardware platform, different customer는 Long-lived 브랜치 -> 다른 프로젝트로 생성
+    
+    <h2>Build Management</h2>
+    build procedure를 테스트하기 위해 정기적으로 빌드해 줘야 됨 -> Building should be automatic <br/>
+    should minimize redundant recompilation<br/>
+    
+    <h3>Daily build and smoke testing</h3>
+    <h4>Build process cna be broken</h4> : 잘못된 코드의 check-in, 빌드 스크립트에 파일 인클루드 안함, 라이브러리 이동 등 <br/>
+    -> 매일 정해진 시간에 가장 최신 버전의 빌드를 찍어보고 간단한 테스트 돌려보기(Smoke testing)
+    
+    <h2>Change Management</h2>
+    제품이 시간에 따라 어떻게 바뀌는지 계속 추적할 수 있어야 됨 -> 어느 버전이든지 생성할 수 있어야 됨<br/>
+    필요한 변경이 이루어졌는지, 잘못된 변경점이 없는지 컨트롤할 수 있어야 됨 <br/>
+    소스 뿐만 아니라 non-code 리소스 또한 관리 필요
+    <h3>Change request</h3> : 변경을 누가, 왜, 언제 이루어졌는지 기록해야 됨<br/>
+    
     
 </body>
 </html>
