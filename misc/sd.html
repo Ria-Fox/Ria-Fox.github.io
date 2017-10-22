@@ -239,6 +239,40 @@
     
     <h3>Types of Testing : Code or functionality?</h3>
     <h4>Black Box Testing : Know the functionality</h4>
-        
+    derive tests from external descriptions of the software<br/>
+    소프트웨어 외부 행동을 관찰하여 기능과 인터페이스를 테스트 -> Requirements, specifications, design 등
+    <h4>White Box Testing : Know the code</h4>
+    소프트웨어의 코드레벨에서 테스트 : examination of procedural level in detail<br/>
+    crashes, out of bounds, file not closed, uncaught exceptions
+    
+    <h3>Types of Testing : Top or Bottom?</h3>
+    <h4>Top-Down Testing</h4> : Main precedure -> sub precedure
+    <h4>Bottom-up Testing</h4> : smallest sub procedure -> upper procedure
+    
+    <h3>Types of Testing : Units, Modules, or System?</h3>
+    <img src="image/sd1.PNG">
+    <h4>Unit testing</h4> : test individual units, by programmers, white, bottom-up
+    <h4>Integration testing </h4> : test interaction between components or units, by programmers, white (black for modules), bottom-up
+    <h4>System testing</h4> : test complete system with respect to its requirements, by external test group, black, top-down
+    <h4>Acceptance testing</h4> : satisfies acceptance criteria by customer, by customer, black, top-down
+    <h3>Automated Testing : Trade-Off</h3>
+    <b>Benefits</b> : regression testing의 cost 감소, 사람의 실수와 테스트 퀄리티의 범위 감소<br/>
+    <b>limitation</b> : usability testing과 같이 자동화할 수 없는 테스트 존재, 환경이 ㅂ녀화하면 깨질 수 있고, automation이 더 비쌀 수 있음
+    <h3>More types of testing</h3>
+    Fault-based testing : look for common faults<br/>
+    Scenario-based testing : based on user stories<br/>
+    Model-based testing : derive from model of the software<br/>
+    Random testing : 랜덤한 인풋 -> 크래시가 나는지, 오라클에 맞는지
+    
+    <h2>JUnit</h2>
+    Open source Java testing framework : automated test support <br/>
+    For unit and integration testing, not system testing <br/>
+    Each test is embedded into one test method (@Test) <br/>
+    Test method : checks a condition(assertion)<br/>
+    org.junit.Assert.*, assertTrue(boolean), assertTrue(String, boolean), assertEquals(expected result Object, test oracle Object) <br/>
+    @Before와 @After로 테스트의 state를 겹치게 하지 않고 돌릴 수 있음
+    
+    <h2>Test Coverage</h2>
+    
 </body>
 </html>
