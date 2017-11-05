@@ -33,7 +33,7 @@
             <a href="#Lecture3">Lecture 3</a> : Testing
         </li>
         <li>
-            <a href="#Lecture4">Lecture 4</a> : Software Process
+            <a href="#Lecture4">Lecture 4</a> : Agile
         </li>
         <li>
             <a href="#Lecture5">Lecture 5</a> : Software Process
@@ -257,7 +257,7 @@
     <h4>Acceptance testing</h4> : satisfies acceptance criteria by customer, by customer, black, top-down
     <h3>Automated Testing : Trade-Off</h3>
     <b>Benefits</b> : regression testing의 cost 감소, 사람의 실수와 테스트 퀄리티의 범위 감소<br/>
-    <b>limitation</b> : usability testing과 같이 자동화할 수 없는 테스트 존재, 환경이 ㅂ녀화하면 깨질 수 있고, automation이 더 비쌀 수 있음
+    <b>limitation</b> : usability testing과 같이 자동화할 수 없는 테스트 존재, 환경이 변화하면 깨질 수 있고, automation이 더 비쌀 수 있음
     <h3>More types of testing</h3>
     Fault-based testing : look for common faults<br/>
     Scenario-based testing : based on user stories<br/>
@@ -273,6 +273,47 @@
     @Before와 @After로 테스트의 state를 겹치게 하지 않고 돌릴 수 있음
     
     <h2>Test Coverage</h2>
+    Test criteria : collection of Test requirements rule <br/>
+    Define model -> find test criteria for model <br/>
+    Test case = traceable repeatable simple
     
+    <h3>Equivalence partitioning</h3> : input 범위를 균등하게 나눠서 넣음 <br/>
+    Conbinatorial Testing : choose effective subsets from partitions <br/>
+    structural coverage: method, statement, branch, condition
+    
+    <h2 id="Lecture4">eXtreme Programming</h2>
+    Main idea : 문서화를 너무 많이 하지 말 것 : 코드와 테스트로 알 수 있게 <br/>
+    feature를 하나씩 구현, 코드를 자주 릴리즈, 고객과 가까이 일하고 팀 멤버와 자주 소통 <br/>
+    <h3>Key practice</h3>
+    <b>Planning game</b> for requirements and user stories<br/>
+    <b>Test-driven development</b> for design and testing<br/>
+    <b>Refactoring</b> for design and implementation<br/>
+    <b>Pair programming</b> for development<br/>
+    <b>Continuous integration</b> for integration<br/><br/>
+    <img src="image/sd2.PNG" alt="">
+    <h2>Pair Programming</h2>
+    Driver : types or writes (코딩 및 디버깅, 테스팅 등)<br/>
+    Navigator : observes(오류가 있나 관찰) <br/>
+    30분마다 역할을 바꿈 <br/>
+    둘 다 집중할 수 있고, 효율이 좋음
+    
+    <h2>User stories</h2>
+    a feature <b>customers want</b> in the software<br/>
+    <b>story points</b> : unit of measure the overall size of a user story, feature 등등
+    
+    <h2>How to plan</h2>
+    Make a list, decide when you will do, what you need<br/>
+    
+    Refactoring : recover simplicity back <br/>
+    <br/>
+    Write test first, and write code
+    
+    <h2>XP Rules</h2>
+    Make it work/right/fast, Refactoring amkes design<br/>
+    XP는 문서화를 거의 하지 않고 코드로서 모든 것을 이해해야 하기 때문에 코드 자체가 이해하기 쉬워야 함
+    
+    <h2>Code Smells</h2>
+    <i>. . . certain structures in the code that suggest (sometimes they scream for) the possibility of refactoring.</i> <b>– M. Fowler</b><br/>
+    <i>. . . symptom[s] in the source code of a program that possibly indicate a deeper problem. . . . usually not bugs ... not technically incorrect and don’t currently prevent the program from functioning. Instead, they indicate weaknesses in design that may be slowing down development or increasing the risk of bugs or failures in the future.</i>  <b>–Wikipedia</b>
 </body>
 </html>
