@@ -86,6 +86,7 @@ div.body1_container div.body1_item {
     padding: 10px;
     margin-left: 10px;
     margin-top: 10px;
+    line-height: 200%;
 }
 div#body2 {
     background-color: #8D88AD;
@@ -109,7 +110,7 @@ span#subtitle2 {
     color: #8D88AD;
     font-size: 20px;
 }
-span#tag {
+span.tag {
      background-color: #e0e0e0;
      top: -2px;
      font-size: 0.6em;
