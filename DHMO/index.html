@@ -19,6 +19,20 @@
                 }
             });
         }
+        function onYouTubeIframeAPIReady() {
+          var player;
+          player = new YT.Player('player', {
+            videoId: 'H2_6RfoiYu4',
+            playerVars: { 'autoplay': 1, 'controls': 0 },
+            events: {
+              'onReady': onPlayerReady,
+              'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
+              'onStateChange': onPlayerStateChange,
+              'onError': onPlayerError
+            }
+          });
+        }
+        
         //DOM이 모두 로드 되었을 때
         function domReady () {
             var button = document.getElementById("button");
