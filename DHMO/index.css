@@ -40,9 +40,6 @@ h1 {
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */  
 }
-iframe {
-    display: none;
-}
 #wrap {
     background: url(giphy1.gif) no-repeat center center fixed;
     -webkit-background-size: cover;
