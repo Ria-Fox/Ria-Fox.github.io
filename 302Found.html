@@ -4,7 +4,7 @@
   <title>Msg 303 : Page found at XXXXXX</title>
   <meta name="robots" content="NONE,NOARCHIVE">
   <style type="text/css">
-    html * { padding:0; margin:0; color:#fff; font-size: 10px}
+    html * { padding:0; margin:0; color:#fff; font-size: 15px}
     body * { padding:10px 20px; }
     body * * { padding:0; }
     body { font:small sans-serif; background:#000; color:#fff;}
@@ -22,6 +22,7 @@
   </style>
   <script>
         var i = 0;
+        var j = 0;
         var click = 0;
         var wait = 0;
         var iswait = 1;
@@ -35,20 +36,14 @@
                 i++;
                 setTimeout(typeWriter1, speed);
             }
-            else {
-                i = 0;
-            }
         }
 
         function typeWriter2() {
             txt = "어디가 땅이고 어디가 천장인지 구분이 되지 않는 어둠만이 가득한 공간 입니다. 당신들이 있던 그 공간과는 완전히 다른 공간입니다. 정상적인 사람이라면 이 곳이 비정상이라는 것을 단박에 알게 되겠죠."
-            if (i < txt.length) {
+            if (j < txt.length) {
                 document.getElementById("floating2").innerHTML += txt.charAt(i);
-                i++;
+                j++;
                 setTimeout(typeWriter2, speed);
-            }
-            else {
-                i = 0;
             }
         }
 
@@ -57,12 +52,12 @@
                 if (wait === 0) {  
                     document.getElementById("wait1").style.visibility='visible';
                     wait = 1;
-                    setTimeout(waitwriting, waitspeed);
+                    setTimeout(waitwriting1, waitspeed);
                 }
                 else {
                     document.getElementById("wait1").style.visibility='hidden';
                     wait = 0;
-                    setTimeout(waitwriting, waitspeed);
+                    setTimeout(waitwriting1, waitspeed);
                 }
             }
         }
@@ -72,12 +67,12 @@
                 if (wait === 0) {  
                     document.getElementById("wait2").style.visibility='visible';
                     wait = 1;
-                    setTimeout(waitwriting, waitspeed);
+                    setTimeout(waitwriting2, waitspeed);
                 }
                 else {
                     document.getElementById("wait2").style.visibility='hidden';
                     wait = 0;
-                    setTimeout(waitwriting, waitspeed);
+                    setTimeout(waitwriting2, waitspeed);
                 }
             }
         }
