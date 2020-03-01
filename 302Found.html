@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Msg 303 : Page found at XXXXXX</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#000; }
+    body>div { border-bottom:1px solid #fff; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#000; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { color: #fff; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    #floating { color:#fff; font-size: 10px }
+  </style>
+  <script>
+        var i = 0;
+        var click = 0;
+        var wait = 0;
+        var iswait = 1;
+        var speed = 50; /* The speed/duration of the effect in milliseconds */
+        var waitspeed = 100;
+
+        function typeWriter(objectId, txt) {
+            if (i < txt.length) {
+                document.getElementById(objectId).innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+            else {
+                i = 0;
+            }
+        }
+
+        function waitwriting() {
+            if (iswait === 1) {
+                if (wait === 0) {  
+                    document.getElementById(wait1).style.visibility='visible';
+                    wait = 1;
+                    setTimeout(waitwriting, waitspeed);
+                }
+                else {
+                    document.getElementById(wait1).style.visibility='hidden';
+                }
+            }
+            }
+        }
+
+        function clickevent() {
+            if (click === 0) {
+                typeWriter("floating2", "눈을 뜨자 온통 검은 세상이 눈에 들어옵니다.");
+                click = 1;
+            }
+            else if (click === 1) {
+                typeWriter("floating2", "어디가 땅이고 어디가 천장인지 구분이 되지 않는 어둠만이 가득한 공간 입니다. 당신들이 있던 그 공간과는 완전히 다른 공간입니다. 정상적인 사람이라면 이 곳이 비정상이라는 것을 단박에 알게 되겠죠.")
+            }
+        }
+
+        window.onload = waitwriting();
+  </script>
+  
+</head>
+<body onclick="clickevent()">
+  <div>
+    <span id="floating1"></span><span id="wait1"></span><br>
+    <p id="floating2"></p><p id="wait2"></p>
+  </div>
+
+
+</body></html>
