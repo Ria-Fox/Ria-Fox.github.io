@@ -40,7 +40,7 @@
             }
         }
 
-        function waitwriting() {
+        function waitwriting1() {
             if (iswait === 1) {
                 if (wait === 0) {  
                     document.getElementById(wait1).style.visibility='visible';
@@ -49,29 +49,54 @@
                 }
                 else {
                     document.getElementById(wait1).style.visibility='hidden';
+                    wait = 0;
+                    setTimeout(waitwriting, waitspeed);
                 }
             }
+            else {
+
+            }
+        }
+
+        function waitwriting2() {
+            if (iswait === 0) {
+                if (wait === 0) {  
+                    document.getElementById(wait2).style.visibility='visible';
+                    wait = 1;
+                    setTimeout(waitwriting, waitspeed);
+                }
+                else {
+                    document.getElementById(wait2).style.visibility='hidden';
+                    wait = 0;
+                    setTimeout(waitwriting, waitspeed);
+                }
+            }
+            else {
+
             }
         }
 
         function clickevent() {
             if (click === 0) {
-                typeWriter("floating2", "눈을 뜨자 온통 검은 세상이 눈에 들어옵니다.");
+                typeWriter("floating1", "눈을 뜨자 온통 검은 세상이 눈에 들어옵니다.");
                 click = 1;
+
             }
             else if (click === 1) {
+                iswait = 0;
+                waitwriting2()
                 typeWriter("floating2", "어디가 땅이고 어디가 천장인지 구분이 되지 않는 어둠만이 가득한 공간 입니다. 당신들이 있던 그 공간과는 완전히 다른 공간입니다. 정상적인 사람이라면 이 곳이 비정상이라는 것을 단박에 알게 되겠죠.")
             }
         }
 
-        window.onload = waitwriting();
+        window.onload = waitwriting1();
   </script>
   
 </head>
 <body onclick="clickevent()">
   <div>
-    <span id="floating1"></span><span id="wait1"></span><br>
-    <p id="floating2"></p><p id="wait2"></p>
+    <span id="floating1"></span><span id="wait1">▼</span><br>
+    <p id="floating2"></p><p id="wait2">▼</p>
   </div>
 
 
