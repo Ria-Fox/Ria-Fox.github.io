@@ -27,7 +27,7 @@
         var wait = 0;
         var iswait = 1;
         var speed = 50; /* The speed/duration of the effect in milliseconds */
-        var waitspeed = 100;
+        var waitspeed = 500;
 
         function typeWriter1() {
             txt = "눈을 뜨자 온통 검은 세상이 눈에 들어옵니다."
@@ -41,7 +41,7 @@
         function typeWriter2() {
             txt = "어디가 땅이고 어디가 천장인지 구분이 되지 않는 어둠만이 가득한 공간 입니다. 당신들이 있던 그 공간과는 완전히 다른 공간입니다. 정상적인 사람이라면 이 곳이 비정상이라는 것을 단박에 알게 되겠죠."
             if (j < txt.length) {
-                document.getElementById("floating2").innerHTML += txt.charAt(i);
+                document.getElementById("floating2").innerHTML += txt.charAt(j);
                 j++;
                 setTimeout(typeWriter2, speed);
             }
