@@ -4,7 +4,7 @@
   <title>Msg 303 : Page found at XXXXXX</title>
   <meta name="robots" content="NONE,NOARCHIVE">
   <style type="text/css">
-    html * { padding:0; margin:0; }
+    html * { padding:0; margin:0; color:#fff; font-size: 10px}
     body * { padding:10px 20px; }
     body * * { padding:0; }
     body { font:small sans-serif; background:#000; }
@@ -19,7 +19,6 @@
     #info ol li { font-family: monospace; }
     #summary { color: #fff; }
     #explanation { background:#eee; border-bottom: 0px none; }
-    #floating { color:#fff; font-size: 10px }
   </style>
   <script>
         var i = 0;
@@ -43,12 +42,12 @@
         function waitwriting1() {
             if (iswait === 1) {
                 if (wait === 0) {  
-                    document.getElementById(wait1).style.visibility='visible';
+                    document.getElementById("wait1").style.visibility='visible';
                     wait = 1;
                     setTimeout(waitwriting, waitspeed);
                 }
                 else {
-                    document.getElementById(wait1).style.visibility='hidden';
+                    document.getElementById("wait1").style.visibility='hidden';
                     wait = 0;
                     setTimeout(waitwriting, waitspeed);
                 }
@@ -58,12 +57,12 @@
         function waitwriting2() {
             if (iswait === 0) {
                 if (wait === 0) {  
-                    document.getElementById(wait2).style.visibility='visible';
+                    document.getElementById("wait2").style.visibility='visible';
                     wait = 1;
                     setTimeout(waitwriting, waitspeed);
                 }
                 else {
-                    document.getElementById(wait2).style.visibility='hidden';
+                    document.getElementById("wait2").style.visibility='hidden';
                     wait = 0;
                     setTimeout(waitwriting, waitspeed);
                 }
